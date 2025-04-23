@@ -1,31 +1,203 @@
 @charset "UTF-8";
 
-html{
+html {
     font-size: 100%;
 }
 
-body{
+body {
     color: #707070;
     font-family: sans-serif;
 }
 
-img{
+img {
     max-width: 100%;
-    vertical-align: bottom;   
+    vertical-align: bottom;
 }
 
-li{
+li {
     list-style: none;
 }
 
-a{
+a {
     color: #707070;
     text-decoration: none;
 }
-a:hover{
+
+a:hover {
     opacity: 0.7;
+}
+
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* Header */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+#header .logo {
+    max-width: 190px;
+    line-height: 0;
+}
+
+#header .logo a {
+    display: block; 
+}
+
+#header .navi {
+    display: flex;
+    align-items: center;
+}
+
+#header .navi li {
+    margin-left: 30px;
+}
+
+/* main */
+.mainvisual {
+    margin-bottom: 80px;
+}
+
+.introduction {
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.introduction .catchphrase {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.introduction .text {
+    font-size: 14px;
+}
+
+.section-title {
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.section-title .en {
+    display: block;
+    font-size: 40px;
+}
+
+.section-title .ja {
+    display: block;
+    font-size: 14px;
+}
+
+#profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 120;
+}
+
+#profile .img {
+    width: 50%;
+}
+
+#profile .detail {
+    width: 50%;
+    padding-left: 80px;
+}
+
+#profile .detail p {
+    font-size: 14px;
+    line-height: 2;
+}
+
+#works {
+    margin-bottom: 120px;
+}
+#works .works-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+#works .works-list li {
+    width: 32%;
+    margin: 0 2% 2% 0;
+    /* width: 32%; */
+    /* #margin-right: 2%; */
+}
+
+#works .works-list li:nth-child(3n) {
+    margin-right: 0;
+}
+
+#footer {
+    font-size: 12px;
+    padding-bottom: 20px;
+    text-align: center;
 }
 
 /* スマートフォン用 */
 @media screen and (max-width: 767px) {
+    #header {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    #header .logo {
+        max-width: 120px;
+    }
+
+    .mainvisual {
+        margin-bottom: 50px;
+    }
+
+    .introduction {
+        margin-bottom: 50px;
+    }
+    .introduction .catchphrase {
+        font-size: 16px;
+    }
+    .introduction .text {
+        text-align: left;
+    }
+
+    .section-title {
+        margin-bottom: 25px;
+    }
+
+    .section-title .en {
+        font-size: 32px;
+    }
+
+    #profile {
+        flex-direction: column-reverse;
+        margin-bottom: 60px;
+    }
+
+    #profile .img {
+        width: 100%;
+    }
+
+    #profile .detail {
+        width: 100%;
+        padding-left: 0;
+        margin-bottom: 20px;
+    }
+
+    #works {
+        margin-bottom: 60px;
+    }
+
+    #works .works-list {
+        flex-direction: column;
+    }
+
+    #works .works-list li{
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
 }
+
