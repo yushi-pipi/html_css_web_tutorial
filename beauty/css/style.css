@@ -1,0 +1,184 @@
+@charset "UTF-8";
+
+html{
+    font-size: 100%;
+}
+
+body{
+    background-color: #fdf8f8;
+    color: #333;
+    font-family: "YuGothic", "Yu Gothic", sans-serif;
+}
+
+img{
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    column-rule: #333;
+    text-decoration: none;
+}
+
+a:hover{
+    opacity: 0.7;;
+}
+
+.wrapper{
+    max-width: 1040px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+/*-------------------------------------------*/
+/* Header */
+/* ------------------------------------------*/
+#header .logo{
+    width: 100%;
+    max-width: 120px;
+    line-height: 0;
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    z-index: 50;
+}
+
+#header .logo a{
+    display: block;
+}
+
+.mainvisual img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;;
+}
+
+/*-------------------------------------------*/
+/* Concept */
+/* ------------------------------------------*/
+.concept {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    position: relative;
+}
+
+.concept .img {
+    max-width: 720px;
+}
+
+.concept .text {
+    max-width: 600px;
+    background-color: rgba(253, 248, 248, 0.8);
+    padding: 40px;
+    position: absolute;
+    top: 325px;
+    right: 0;
+}
+
+.concept .text .section-title{
+    font-family:'YuMincho', 'Yu Mincho', serif;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.concept .text .description{
+    font-size: 15px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/*-------------------------------------------*/
+/* New Products */
+/* ------------------------------------------*/
+.new-products {
+    background-color: #f4eaea;
+    padding: 130px 0;
+}
+
+.new-products  .section-title{
+    font-family: "YuMincho", "Yu Mincho", serif;
+    font-size: 80%;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    line-height: 1.2;
+    margin-bottom: 40px;
+}
+
+.new-products .img-group{
+    height: 890px;
+    position: relative;
+}
+
+.new-products .img-group .img1{
+    max-width: 350px;
+    position: absolute;
+    top: 0;
+    left: 42%;
+    z-index: 30;
+}
+
+.new-products .img-group .img2{
+    max-width: 400px;
+    position: absolute;
+    top: 250px;
+    left: 8%;
+    z-index: 20;
+}
+
+.new-products .img-group .img3{
+    max-width: 480px;
+    position: absolute;
+    top: 570px;
+    left: 40%;
+    z-index: 10;
+}
+
+.new-products .img-group .circle{
+    width: 90px;
+    height: 90px;
+    background-color: #333;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*スマートフォン*/
+@media screen and (max-width: 767px) {
+    #header .logo{
+        top: 20px;
+        left: 20px;
+        max-width: 85px;
+    }
+    .mainvisual img{
+        height: 480px;
+    }
+
+    .concept {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        position: static;
+    }
+
+    .concept .img {
+        margin-bottom: 30px;
+    }
+
+    .concept .text {
+        background-color: transparent;
+        padding: 0;
+        position: static;
+    }
+
+    .concept .text .section-title{
+        font-size: 24px;
+    }
+
+}
